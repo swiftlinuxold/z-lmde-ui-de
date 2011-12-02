@@ -1,0 +1,8 @@
+This is the repository that installs and configures IceWM and ROX pinboard, the same lightweight window manager and
+desktop environment used in antiX Linux.
+
+IceWM looks and feels more like GNOME 2, Xfce, and Windows 95/98/XP than Fluxbox does.
+
+IceWM is easier to configure than JWM and has more support available.
+
+ROX pinboard offers the clickable icons on the desktop like GNOME 2, Xfce, and LXDE but is lighter and faster.

@@ -1,0 +1,20 @@
+##Sample icewm keys for antiX.
+
+key "Alt+Ctrl+r" sudo rox 
+key "Alt+Ctrl+u" rox 
+key "Alt+Ctrl+m" rxvt-unicode -tr -sh 65 -fg white -T 'Htop' -e htop 
+key "Alt+Ctrl+t" rxvt-unicode -tr -sh 65 -fg white -T 'antiX' 
+key "Alt+Ctrl+b" iceape 
+key "Alt+Ctrl+i" inxi-gui
+key "Alt+Ctrl+p" pcmanfm
+key "Alt+Ctrl+s" antixscreenshot.sh 
+key "Alt+Ctrl+c" antixcc.sh 
+key "Alt+Ctrl+o" conkytoggleice.sh 
+key "Alt+Ctrl+k" xkill
+key "Alt+F2" gexec
+
+key "Alt+Ctrl+KP_Divide" aumix -v -5 # lower volume
+key "Alt+Ctrl+KP_Multiply" aumix -v +5 # raise volume
+
+#dmenu
+key "Alt+Ctrl+l" slock

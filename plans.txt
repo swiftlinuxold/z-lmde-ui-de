@@ -1,0 +1,6 @@
+The antiX Linux user interface is easier to emulate than the Puppy Linux user interface.
+
+However, Puppy Linux has a better menu.  
+
+Future plans are to modify the menu files and menu updating script to behave more like Puppy Linux.
+Puppy Linux with IceWM installed and activated will be a model for this.

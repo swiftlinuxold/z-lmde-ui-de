@@ -1,0 +1,15 @@
+STARTUP
+Provided by ~/.icewm/startup
+
+MENU UPDATING
+/usr/local/bin/auto-icewm-menu.sh
+calls 
+/usr/local/bin/icewm-xdg-menu.py
+and prints results in
+~/.icewm/application
+
+MENU COMPONENTS
+Provided by ~/.icewm/menu
+Line starting with "menufile" calls ~/.icewm/application
+
+Active files belong in ~/.icewm and /etc/X11/icewm

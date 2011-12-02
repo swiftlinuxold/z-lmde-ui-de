@@ -1,0 +1,27 @@
+# This is a default toolbar definition file for IceWM
+#
+# Place your personal variant in $HOME/.icewm directory.
+
+### Commonly used applications
+#prog "Home Folder" folder rox
+prog "Home Folder" folder thunar
+#prog "Terminal" xterm rxvt-unicode -tr -sh 65 -fg white
+prog "Terminal" xterm roxterm
+#prog "Text Editor" /usr/share/icons/Tango/32x32/apps/accessories-text-editor.png leafpad
+prog "Browser" /usr/share/icons/gTangish-2.0a1/32x32/apps/internet-web-browser.png /usr/bin/iceape
+
+### Here is an example of a "quick launch" button
+#menu "Quick Launch" /usr/share/icons/Tango/32x32/actions/go-up.png {
+#prog "Browser" iceweasel.png /usr/bin/iceape
+#prog "Text Editor" /usr/share/icons/gTangish-2.0a1/32x32/apps/accessories-text-editor.png leafpad
+#prog "Music Player" /usr/share/icons/gTangish-2.0a1/32x32/apps/xmms-headphones.png qmmp
+#prog "Streamtuner" /usr/share/pixmaps/streamtuner.png streamtuner
+#prog "Burner" /usr/share/pixmaps/gnomebaker.png gnomebaker
+#prog "Viewer" /usr/share/pixmaps/gqview.png geeqie
+#}
+
+### System/settings applications
+#prog "Volume" /usr/share/icons/gTangish-2.0a1/32x32/apps/multimedia-volume-control.png roxterm -e alsamixer
+prog "Control Center" /usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png antixcc.sh
+prog "Quit" /usr/share/icons/gTangish-2.0a1/32x32/actions/system-log-out.png exitantix.sh
+

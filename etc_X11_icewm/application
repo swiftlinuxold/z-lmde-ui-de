@@ -1,0 +1,122 @@
+menu "Accessories" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-accessories.png" {
+prog "Advert Blocker" "/usr/share/icons/Buuf-Deuce/128x128/status/dialog-error.png" block-advert.sh
+prog "Archive Manager" "/usr/share/icons/Buuf-Deuce/128x128/apps/file-roller.png" file-roller 
+prog "Gjots2 Jotter" "/usr/share/pixmaps/gjots.png" gjots2
+prog "Leafpad" "/usr/share/pixmaps/leafpad.png" leafpad 
+prog "luckyBackup" "/usr/share/pixmaps/luckybackup.png" /usr/bin/luckybackup
+prog "metapackage-installer" "/usr/share/pixmaps/metapackage-installer.xpm" su-to-root -X -c /usr/sbin/metapackage-installer
+prog "Parcellite" "/usr/share/icons/Buuf-Deuce/128x128/actions/gtk-paste.png" parcellite
+prog "Root Terminal" "/usr/share/icons/Buuf-Deuce/128x128/apps/gksu-root-terminal.png" gksu /usr/bin/x-terminal-emulator
+prog "ROXTerm" "/usr/share/pixmaps/roxterm.xpm" roxterm
+prog "Screenshot" "/usr/share/icons/Buuf-Deuce/128x128/apps/camera.png" /usr/local/bin/antixscreenshot.sh
+prog "Searchmonkey" "/usr/share/pixmaps/searchmonkey/searchmonkey-32x32.png" searchmonkey
+prog "SpeedCrunch" "/usr/share/pixmaps/speedcrunch.png" speedcrunch
+prog "Zim Desktop Wiki" "/usr/share/pixmaps/zim.png" zim
+}
+menu "Games" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-games.png" {
+prog "DOSBox Emulator" "/usr/share/pixmaps/dosbox.xpm" dosbox
+prog "Gweled" "/usr/share/icons/hicolor/16x16/apps/gweled.png" gweled
+prog "LBreakout2" "/usr/share/pixmaps/lbreakout2.xpm" /usr/games/lbreakout2
+prog "Njam" "njamicon.png" njam
+prog "sudoku-savant" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/sudoku-savant
+prog "xmahjongg" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/games/xmahjongg
+}
+menu "Graphics" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-graphics.png" {
+prog "apvlv" "/usr/share/pixmaps/apvlv/apvlv.xpm" apvlv
+prog "Gcolor2" "/usr/share/pixmaps/gcolor2/gcolor2.xpm" gcolor2
+prog "Geeqie" "/usr/share/pixmaps/geeqie.png" geeqie-standard -r 
+prog "Gtkam Digital Camera Browser" "/usr/share/pixmaps/gtkam-camera.png" gtkam
+prog "mtPaint graphic editor" "/usr/share/pixmaps/mtpaint.png" mtpaint
+prog "XSane Image scanning program" "/usr/share/icons/Buuf-Deuce/128x128/apps/xsane.png" xsane
+prog "zathura" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" zathura
+}
+menu "Internet" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-internet.png" {
+prog "Ceni" "/usr/share/pixmaps/ceni.xpm" roxterm -e ceniwrapper
+prog "Chatzilla" "/usr/share/pixmaps/chatzilla.xpm" iceape -chat
+prog "Dillo" "/usr/share/pixmaps/dillo48.png" dillo
+prog "ELinks Web Browser" "/usr/share/icons/Buuf-Deuce/128x128/mimetypes/html.png" roxterm -e /usr/bin/elinks 
+prog "exoodles" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" roxterm -e su -c exoodles
+prog "gFTP" "/usr/share/icons/Buuf-Deuce/128x128/apps/gftp.png" gftp 
+prog "GNOME PPP" "/usr/share/pixmaps/gnome-ppp.xpm" gnome-ppp
+prog "GPRS-EDGE-UMTS-Panel" "/usr/share/icons/Buuf-Deuce/128x128/devices/network-wireless.png" umts-panel
+prog "Iceape Mail Composer" "/usr/share/pixmaps/iceape-mail-compose.xpm" iceape -compose
+prog "Iceape Mail & Newsgroups" "/usr/share/pixmaps/iceape-mailnews.xpm" iceape -mail
+prog "Iceape Navigator" "/usr/share/pixmaps/iceape.xpm" iceape -browser 
+prog "Iceape Suite" "/usr/share/pixmaps/iceape.xpm" iceape 
+prog "Links 2" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" xlinks2
+prog "Pidgin Internet Messenger" "/usr/share/icons/Buuf-Deuce/128x128/apps/pidgin.png" pidgin
+prog "pyNeighborhood" "/usr/share/pyneighborhood/icons/pyneighborhood.png" pyNeighborhood
+prog "RutilT WLAN Manager" "/usr/share/pixmaps/rutilt.xpm" rutilt
+prog "Smbc" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" roxterm -e smbc
+prog "Transmission" "/usr/share/icons/Buuf-Deuce/128x128/apps/transmission.png" transmission 
+prog "Wicd Network Manager" "/usr/share/pixmaps/wicd-gtk.xpm" wicd-gtk --no-tray
+prog "wpa_gui" "/usr/share/pixmaps/wpa_gui.xpm" /usr/share/wpagui/netdev_wrapper
+}
+menu "Office" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-office.png" {
+prog "AbiWord" "/usr/share/icons/Buuf-Deuce/128x128/apps/abiword_48.png" abiword
+prog "ePDFViewer" "/usr/share/pixmaps/icon_epdfview-48.png" epdfview 
+prog "Gnumeric" "/usr/share/icons/Buuf-Deuce/128x128/apps/gnumeric.png" gnumeric 
+prog "Iceape Address Book" "/usr/share/pixmaps/iceape-addressbook.xpm" iceape -addressbook
+prog "Phonebook" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/phonebookantix.sh
+}
+menu "Other" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-other.png" {
+prog "antiX-add-key" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/add-key
+prog "antiX-add-start" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/add-start
+prog "antiXCC" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/antixcc.sh
+prog "antiX-mountbox" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/mountbox
+}
+menu "Programming" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-development.png" {
+prog "Geany" "/usr/share/icons/Buuf-Deuce/128x128/apps/geany.png" geany 
+prog "Iceape Composer" "/usr/share/pixmaps/iceape-composer.xpm" iceape -edit
+}
+menu "Sound & Video" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-multimedia.png" {
+prog "ALSA Mixer" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" gamix
+prog "Asunder CD Ripper" "/usr/share/icons/asunder.png" asunder
+prog "cdw" "/usr/share/icons/Buuf-Deuce/128x128/devices/media-cdrom.png" roxterm -e cdw
+prog "Cheese" "/usr/share/icons/Buuf-Deuce/128x128/apps/cheese.png" cheese
+prog "GNOME MPlayer" "/usr/share/pixmaps/gnome-mplayer.xpm" gnome-mplayer 
+prog "Goggles Music Manager" "/usr/share/icons/hicolor/48x48/apps/gogglesmm.png" gogglesmm
+prog "gxine" "/usr/share/pixmaps/gxine.png" gxine
+prog "Imagination" "/usr/share/pixmaps/imagination.xpm" imagination 
+prog "mhWaveEdit" "/usr/share/pixmaps/mhwaveedit.xpm" mhwaveedit
+prog "Qmmp" "/usr/share/icons/hicolor/16x16/apps/qmmp.png" qmmp 
+prog "Recorder" "/usr/share/pixmaps/recorder.png" recorder
+prog "ripit" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" roxterm -e ripit
+prog "streamtuner" "/usr/share/pixmaps/streamtuner.png" streamtuner
+prog "WinFF" "/usr/share/pixmaps/winff.xpm" winff
+prog "Xfburn" "/usr/share/icons/Buuf-Deuce/128x128/devices/media-cdrom.png" xfburn
+}
+menu "System Tools" "/usr/share/icons/Buuf-Deuce/128x128/categories/applications-system.png" {
+prog "Bulk Rename" "/usr/share/icons/Buuf-Deuce/128x128/apps/Thunar.png" /usr/lib/thunar/ThunarBulkRename 
+prog "Gigolo" "/usr/share/icons/Buuf-Deuce/128x128/places/gtk-network.png" gigolo
+prog "Grsync" "/usr/share/pixmaps/grsync.png" /usr/bin/grsync -i 
+prog "Htop" "/usr/share/pixmaps/htop.png" roxterm -e htop
+prog "luckyBackup (super user)" "/usr/share/pixmaps/luckybackup.png" su-to-root -X -c /usr/bin/luckybackup
+prog "pyNeighborhood" "/usr/share/pyneighborhood/icons/pyneighborhood.png" pyNeighborhood
+prog "Ranger" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" roxterm -e ranger
+prog "ROX-Filer" "/usr/share/pixmaps/roxfiler.png" rox-filer
+prog "System Profiler and Benchmark" "/usr/share/hardinfo/pixmaps/logo.png" hardinfo
+prog "Thunar File Manager" "/usr/share/icons/Buuf-Deuce/128x128/apps/Thunar.png" Thunar 
+}
+menu "Preferences" "/usr/share/icons/Buuf-Deuce/128x128/categories/preferences-desktop.png" {
+prog "ADSL/PPPOE configuration" "/usr/share/pixmaps/pppoeconf.xpm" roxterm -e su -c /usr/sbin/pppoeconf
+prog "antiX-add-key" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/add-key
+prog "antiX-add-start" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/add-start
+prog "antiXCC" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/antixcc.sh
+prog "antiX-mountbox" "/usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png" /usr/local/bin/mountbox
+prog "Appearance" "/usr/share/icons/Buuf-Deuce/128x128/apps/preferences-desktop-theme.png" lxappearance
+prog "Change Wallpaper" "/usr/share/pixmaps/daves-system-apps/wallpaper.png" wallpaper.sh
+prog "File Manager" "/usr/share/icons/Buuf-Deuce/128x128/apps/file-manager.png" thunar-settings
+prog "Firewall Configuration" "/usr/share/icons/hicolor/48x48/apps/gufw.png" gufw
+prog "GParted" "/usr/share/icons/Buuf-Deuce/128x128/apps/gparted.png" gksu /usr/sbin/gparted
+prog "IBus Preferences" "/usr/share/icons/hicolor/scalable/apps/ibus-setup.svg" ibus-setup
+prog "Input Method Switcher" "input-keyboard" im-switch
+prog "Multiple screens" "/usr/share/icons/Buuf-Deuce/128x128/apps/display-capplet.png" grandr
+prog "Preferred Applications" "/usr/share/icons/hicolor/24x24/apps/preferences-desktop-default-applications.png" exo-preferred-applications
+prog "Printing" "/usr/share/icons/Buuf-Deuce/128x128/devices/printer.png" system-config-printer
+prog "Removable Drives and Media" "/usr/share/icons/Buuf-Deuce/128x128/devices/gnome-dev-removable.png" /usr/lib/thunar-volman/thunar-volman-settings
+prog "Synaptic Package Manager" "/usr/share/icons/Buuf-Deuce/128x128/apps/synaptic.png" su-to-root -X -c /usr/sbin/synaptic
+prog "System Information" "/usr/share/pixmaps/daves-system-apps/system.png" inxi-gui
+prog "User Management" "/usr/share/pixmaps/daves-system-apps/users.png" gksu user-management
+prog "Windows Wireless Drivers" "/usr/share/pixmaps/ndisgtk.xpm" su-to-root -X -c "/usr/sbin/ndisgtk"
+}
