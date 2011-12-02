@@ -1,15 +1,19 @@
-STARTUP
+ICEWM STARTUP IN ANTIX
 Provided by ~/.icewm/startup
 
-MENU UPDATING
+ICEWM MENU UPDATING IN ANTIX
 /usr/local/bin/auto-icewm-menu.sh
 calls 
 /usr/local/bin/icewm-xdg-menu.py
 and prints results in
 ~/.icewm/application
 
-MENU COMPONENTS
+MENU COMPONENTS IN ANTIX
 Provided by ~/.icewm/menu
 Line starting with "menufile" calls ~/.icewm/application
 
 Active files belong in ~/.icewm and /etc/X11/icewm
+
+ANTIX PACKAGES FOR MENU UPDATES: menu, xdg-utils
+
+LMDE PACKAGES FOR MENU UPDATES menu, menu-xdg, xdg-utils
