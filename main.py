@@ -55,8 +55,8 @@ elim_dir (themes+'motif')
 elim_dir (themes+'warp3')
 elim_dir (themes+'warp4')
 
-# Install ROX-Filer and ROXTerm
-os.system ('apt-get install -y rox-filer roxterm')
+# Install ROX-Filer
+os.system ('apt-get install -y rox-filer')
 
 # Remove background wallpapers for GNOME to save space
 backgrounds='/usr/share/backgrounds/'
