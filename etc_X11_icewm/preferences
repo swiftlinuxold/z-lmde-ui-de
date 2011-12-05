@@ -35,7 +35,7 @@ ShowWindowList=0
 
 ShowLogoutMenu=1
 ShowLogoutSubMenu=1
-LogoutCommand="exitantix.sh"
+LogoutCommand="exitantix.sh" # Provided in /usr/local/bin
 ConfirmLogout=0 # Change to 0 if you add a logout command
 ShutdownCommand="dbus-send --system --print-reply --dest="org.freedesktop.Hal" /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Shutdown"
 RebootCommand="dbus-send --system --print-reply --dest="org.freedesktop.Hal" /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Reboot"

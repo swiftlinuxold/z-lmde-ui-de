@@ -3,7 +3,7 @@
 ## Auto update menu
 #python ~/.icewm/icemenuyap2.py > ~/.icewm/application ##This is old menu##
 
-auto-icewm-menu.sh &
+# auto-icewm-menu.sh &
 
 #killall icewmtray
 #icewmtray &
@@ -12,14 +12,14 @@ auto-icewm-menu.sh &
 #Use feh to set wallpaper
 #eval `cat ~/.fehbgrox-ice` &
 
-conky &
-
 # xgamma -rgamma 1.3 -ggamma 1.3 -bgamma 1.3 # Uncomment this line if you need gamma correction.
 # Go to http://links.twibright.com/calibration.html to adjust your gamma.
 
-## Set desktop icons
-#pcmanfm --desktop &
-rox --pinboard=antiX-ice &
+## Activate ROX pinboard to showdesktop icons
+rox --pinboard=swift 
+
+# Activate Conky display
+conky &
 
 # set live keyboard
 #setxkbmap
@@ -36,4 +36,4 @@ rox --pinboard=antiX-ice &
 #ln -s $HOME/.config/nitrogen/bg-saved-icewm.cfg $HOME/.config/nitrogen/bg-saved.cfg 
 #nitrogen --restore &
 
-sleep 5 && volumeicon &
+# sleep 5 && volumeicon &

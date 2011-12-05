@@ -22,16 +22,23 @@ else:
 # Everything up to this point is common to all Python scripts called by shared-*.sh
 # =================================================================================
 
-# THIS IS THE SCRIPT FOR INSTALLING AND SETTING UP ICEWM and ROX FILER
+# THIS IS THE SCRIPT FOR INSTALLING AND SETTING UP ICEWM, ROX, AND CONKY
 
 print '======================================='
 print 'BEGIN INSTALLING AND CONFIGURING THE DE'
+
+import shutil
+# Install and configure Conky
+os.system ('apt-get install -y conky')
+src = dir_develop + '/ui-de/dotconkyrc/conkyrc-regular'
+dest = '/home/' + uname + '/.conkyrc'
+shutil.copyfile(src, dest)
+
 print 'Install IceWM'
 # Install IceWM
 os.system('apt-get install -y icewm')
 # os.system('apt-get install -y icewm icewm-gnome-support')
 
-import shutil
 def elim_dir (dir_to_elim): 
 	if (os.path.exists(dir_to_elim)):
 		shutil.rmtree (dir_to_elim)
@@ -51,10 +58,81 @@ elim_dir (themes+'warp4')
 # Install ROX-Filer and ROXTerm
 os.system ('apt-get install -y rox-filer roxterm')
 
+# Remove background wallpapers for GNOME to save space
+backgrounds='/usr/share/backgrounds/'
+elim_dir (backgrounds+'linuxmint')
+elim_dir (backgrounds+'linuxmint-debian')
+elim_dir (backgrounds+'linuxmint-katya')
+elim_dir (backgrounds+'linuxmint-katya-extra')
+
+# Create directory for Swift Linux wallpaper
+dir_wallpaper='/usr/share/backgrounds/swift'
+if not (os.path.exists(dir_wallpaper)):
+	os.mkdir(dir_wallpaper)
+
+# Copy the wallpaper file to the Swift Linux wallpaper directory
+src = dir_develop + '/ui-de/usr_share_backgrounds_swift/rox-regular.jpg'
+dest = dir_wallpaper + '/swift.jpg'
+shutil.copyfile(src, dest)
+
+# Create the directory for the ROX desktop file
+dir_pb1 = '/home/'+uname+'/.config/rox.sourceforge.net'
+dir_pb2 = dir_pb1 + '/ROX-Filer'
+if not (os.path.exists(dir_pb1)):
+	os.mkdir (dir_pb1)
+if not (os.path.exists(dir_pb2)):
+	os.mkdir (dir_pb2)
+
+# Copy the ROX desktop file to dir_pb2
+src=dir_develop+'/ui-de/ROX-Filer/pb_swift'
+dest=dir_pb2+'/pb_swift'
+shutil.copyfile(src, dest)
+
+# Copy the ROX Options file to dir_pb2
+src=dir_develop+'/ui-de/ROX-Filer/Options'
+dest=dir_pb2+'/Options'
+shutil.copyfile(src, dest)
+
 # Activate ROX Pinboard
+# os.system ('rox --pinboard=')
 # os.system ('rox --pinboard=swift')
 
 # print 'Adding/replacing IceWM files'
+
+
+src = dir_develop + '/ui-de/etc_X11_icewm/theme'
+dest = '/etc/X11/icewm/theme'
+shutil.copyfile (src, dest)
+dir_pb3 = '/home/'+uname+'/.icewm'
+dest = dir_pb3 + '/theme'
+shutil.copyfile (src, dest)
+
+src=dir_develop+'/ui-de/etc_X11_icewm/preferences'
+dest='/etc/X11/icewm/preferences'
+shutil.copyfile(src, dest)
+dest = dir_pb3 + '/preferences'
+shutil.copyfile (src, dest)
+
+src=dir_develop+'/ui-de/etc_X11_icewm/startup'
+dest='/etc/X11/icewm/startup'
+os.system ('chmod a+rwx ' + dest)
+shutil.copyfile(src, dest)
+dest='/home/'+uname+'/.icewm/startup'
+shutil.copyfile(src, dest)
+dest = dir_pb3 + '/startup'
+shutil.copyfile(src, dest)
+os.system ('chmod a+rwx ' + dest)
+
+# src=dir_develop+'/ui-de/etc_X11_icewm/keys'
+# dest='/etc/X11/icewm/keys'
+# shutil.copyfile(src, dest)
+
+
+# src=dir_develop+'/ui-de/etc_X11_icewm/winoptions'
+# dest='/etc/X11/icewm/winoptions'
+# shutil.copyfile(src, dest)
+
+
 
 # src=dir_develop+'/ui-icewm/usr_local_bin/auto-icewm-menu.sh'
 # dest='/usr/local/bin/auto-icewm-menu.sh'
@@ -64,35 +142,19 @@ os.system ('apt-get install -y rox-filer roxterm')
 # dest='/usr/local/bin/icewm-xdg-menu'
 # shutil.copyfile(src, dest)
 
-src=dir_develop+'/ui-de/etc_X11_icewm/keys'
-dest='/etc/X11/icewm/keys'
-shutil.copyfile(src, dest)
-
 # src=dir_develop+'/ui-icewm/home_user_doticewm/menu'
 # dest='/home/'+uname+'/.icewm/menu'
 # shutil.copyfile(src, dest)
 
-src=dir_develop+'/ui-de/etc_X11_icewm/preferences'
-dest='/etc/X11/icewm/preferences'
-shutil.copyfile(src, dest)
-
-# src=dir_develop+'/ui-icewm/home_user_doticewm/startup'
-# dest='/home/'+uname+'/.icewm/startup'
-# shutil.copyfile(src, dest)
-
-src=dir_develop+'/ui-de/etc_X11_icewm/theme'
-dest='/etc/X11/icewm/theme'
-shutil.copyfile(src, dest)
 
 # src=dir_develop+'/ui-icewm/home_user_doticewm/toolbar'
 # dest='/home/'+uname+'/.icewm/toolbar'
 # shutil.copyfile(src, dest)
 
-src=dir_develop+'/ui-de/etc_X11_icewm/winoptions'
-dest='/etc/X11/icewm/winoptions'
-shutil.copyfile(src, dest)
+
 
 print 'FINISHED INSTALLING AND CONFIGURING THE DE'
+print '=========================================='
 
 
 

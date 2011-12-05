@@ -17,3 +17,23 @@ Active files belong in ~/.icewm and /etc/X11/icewm
 ANTIX PACKAGES FOR MENU UPDATES: menu, xdg-utils
 
 LMDE PACKAGES FOR MENU UPDATES menu, menu-xdg, xdg-utils
+
+Puppy Linux desktop:
+First row: file, help, mount, install, setup, edit, console
+Second row: write, calc, paint, draw
+Third row: browse, email, chat
+Fourth row: plan, play
+Fifth row: connect 
+
+Bottom of Puppy Linux menu:
+separator
+
+prog        Help help24 defaulthtmlviewer file:///usr/share/doc/index.html
+
+menu        "Shutdown" shutdown24 {
+prog "Restart with JWM" mini-windows restartwm jwm
+restart "Restart IceWM" mini-windows icewm
+restart "Restart IceWM-lite" mini-windows icewm-lite
+prog "Restart X server" mini-x restartwm
+prog "Shutdown Computer" mini-stop wmpoweroff
+prog "Reboot Computer"  mini-arrow-right wmreboot 
