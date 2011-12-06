@@ -93,105 +93,62 @@ src=dir_develop+'/ui-de/ROX-Filer/Options'
 dest=dir_pb2+'/Options'
 shutil.copyfile(src, dest)
 
-# Activate ROX Pinboard
-# os.system ('rox --pinboard=')
-# os.system ('rox --pinboard=swift')
+# print 'Adding/replacing IceWM configuration files'
 
-# print 'Adding/replacing IceWM files'
+dir_pb3 = '/home/'+uname+'/.icewm'
+if not (os.path.exists(dir_pb3)):
+	os.mkdir (dir_pb3)
 
 
+# theme: carried over from antiX Linux
 src = dir_develop + '/ui-de/etc_X11_icewm/theme'
 dest = '/etc/X11/icewm/theme'
 shutil.copyfile (src, dest)
-dir_pb3 = '/home/'+uname+'/.icewm'
+
 dest = dir_pb3 + '/theme'
 shutil.copyfile (src, dest)
 
+# preferences: carried over from antiX Linux
 src=dir_develop+'/ui-de/etc_X11_icewm/preferences'
 dest='/etc/X11/icewm/preferences'
 shutil.copyfile(src, dest)
+
 dest = dir_pb3 + '/preferences'
 shutil.copyfile (src, dest)
 
+# startup: carried over from antiX-based Swift Linux
 src=dir_develop+'/ui-de/etc_X11_icewm/startup'
 dest='/etc/X11/icewm/startup'
 os.system ('chmod a+rwx ' + dest)
 shutil.copyfile(src, dest)
-dest='/home/'+uname+'/.icewm/startup'
-shutil.copyfile(src, dest)
+
 dest = dir_pb3 + '/startup'
 shutil.copyfile(src, dest)
 os.system ('chmod a+rwx ' + dest)
 
-# src=dir_develop+'/ui-de/etc_X11_icewm/keys'
-# dest='/etc/X11/icewm/keys'
-# shutil.copyfile(src, dest)
+# keys: carried over from antiX Linux
+src=dir_develop+'/ui-de/etc_X11_icewm/keys'
+dest='/etc/X11/icewm/keys'
+shutil.copyfile(src, dest)
 
+dest = dir_pb3 + '/keys'
+shutil.copyfile (src, dest)
 
-# src=dir_develop+'/ui-de/etc_X11_icewm/winoptions'
-# dest='/etc/X11/icewm/winoptions'
-# shutil.copyfile(src, dest)
+# winoptions: carried over from antiX Linux
+src=dir_develop+'/ui-de/etc_X11_icewm/winoptions'
+dest='/etc/X11/icewm/winoptions'
+shutil.copyfile(src, dest)
 
+dest = dir_pb3 + '/winoptions'
+shutil.copyfile (src, dest)
 
+# toolbar: carried over from antiX Linux, updated
+src=dir_develop+'/ui-de/etc_X11_icewm/toolbar'
+dest='/etc/X11/icewm/toolbar'
+shutil.copyfile(src, dest)
 
-# src=dir_develop+'/ui-icewm/usr_local_bin/auto-icewm-menu.sh'
-# dest='/usr/local/bin/auto-icewm-menu.sh'
-# shutil.copyfile(src, dest)
-
-# src=dir_develop+'/ui-icewm/usr_local_bin/icewm-xdg-menu'
-# dest='/usr/local/bin/icewm-xdg-menu'
-# shutil.copyfile(src, dest)
-
-# src=dir_develop+'/ui-icewm/home_user_doticewm/menu'
-# dest='/home/'+uname+'/.icewm/menu'
-# shutil.copyfile(src, dest)
-
-
-# src=dir_develop+'/ui-icewm/home_user_doticewm/toolbar'
-# dest='/home/'+uname+'/.icewm/toolbar'
-# shutil.copyfile(src, dest)
-
-
+dest = dir_pb3 + '/toolbar'
+shutil.copyfile (src, dest)
 
 print 'FINISHED INSTALLING AND CONFIGURING THE DE'
 print '=========================================='
-
-
-
-
-
-
-
-# Configure JWM
-# Add /home/(username)/.jwmrc and /home/(username)/.jwmrc-tray
-
-# src = dir_develop + '/ui-wm/user/dot_jwmrc'
-# dest = '/home/'+uname+'/.jwmrc'
-# shutil.copy2 (src, dest)
-
-# src = dir_develop + '/ui-wm/user/dot_jwmrc-tray'
-# dest = '/home/'+uname+'/.jwmrc-tray'
-# shutil.copy2 (src, dest)
-
-# Add /home/(username)/.jwm
-# src = dir_develop + '/ui-wm/user_dot_jwm'
-# dest = '/home/'+uname+'/.jwm'
-# if (os.path.exists(dest)):
-#	shutil.rmtree (dest)
-# shutil.copytree (src, dest)
-
-# Add /usr/local/jwmconfig2
-# src = dir_develop + '/ui-wm/usr_local_jwmconfig2'
-# dest = '/usr/local/jwmconfig2'
-# if (os.path.exists(dest)):
-#	shutil.rmtree (dest)
-# shutil.copytree (src, dest)
-
-# Replace /etc/xdg
-# print 'Replacing /etc/xdg'
-# os.mkdir('/etc/xdg')
-# src = dir_develop + '/ui-wm/etc_xdg'
-# dest = '/etc/xdg'
-# if (os.path.exists(dest)):
-#	shutil.rmtree (dest)
-# shutil.copytree (src, dest)
