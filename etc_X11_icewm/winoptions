@@ -47,3 +47,4 @@ MainWindow.licq.layer: Below
 #MainWindow.licq.doNotCover: 1
 
 xmms.tray: Exclusive
+#nm-applet.tray: Exclusive

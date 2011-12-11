@@ -67,12 +67,13 @@ TaskBarShowAPMStatus=0
 TaskBarShowMailboxStatus=0
 MailCommand="iceape -mail"
 
-TaskBarShowCPUStatus=0
+TaskBarShowCPUStatus=1
 CPUStatusCommand="roxterm -e htop"
 
-TaskBarShowNetStatus=0
-NetStatusCommand="x-terminal-emulator -name netstat -title 'Network Status' -e netstat -c"
-NetworkStatusDevice="ppp0 eth0"
+TaskBarShowNetStatus=1
+# NetStatusCommand="x-terminal-emulator -name netstat -title 'Network Status' -e netstat -c"
+NetStatusCommand="nm-applet"
+NetworkStatusDevice="ppp0 eth1"
 
 #  Keyboard Shortcuts
 #####################
