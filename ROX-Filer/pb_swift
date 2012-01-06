@@ -19,7 +19,7 @@
   <icon x="40" y="260" label="MPlayer">/usr/share/applications/mplayer.desktop</icon>
   <icon x="110" y="260" label="VLC Player">/usr/share/applications/vlc.desktop</icon>
 
-  <icon x="40" y="330" label="Apps">/usr/share/applications</icon>
+  <icon x="40" y="330" label="Apps">pcmanfm /usr/share/applications & </icon>
   <icon x="110" y="330" label="Connect">/usr/share/applications/nm-connection-editor.desktop</icon>
   
    
