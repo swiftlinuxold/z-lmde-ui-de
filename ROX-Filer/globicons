@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<special-files>
+  <rule match="/usr/local/bin/config-swiftlinux.sh">
+    <icon>/usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png</icon>
+  </rule>
+</special-files>

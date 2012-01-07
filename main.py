@@ -93,6 +93,11 @@ src=dir_develop+'/ui-de/ROX-Filer/Options'
 dest=dir_pb2+'/Options'
 shutil.copyfile(src, dest)
 
+# Copy the ROX globicons file to dir_pb2
+src=dir_develop+'/ui-de/ROX-Filer/globicons'
+dest=dir_pb2+'/globicons'
+shutil.copyfile(src, dest)
+
 # print 'Adding/replacing IceWM configuration files'
 
 dir_pb3 = '/home/'+uname+'/.icewm'
