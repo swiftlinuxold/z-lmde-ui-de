@@ -1,6 +1,10 @@
 This is the repository that installs and configures IceWM and ROX pinboard, the same lightweight window manager and
 desktop environment used in antiX Linux.  This repository also installs and configures Conky.
 
+This repository changes the IceWM settings, startup script, and toolbar.
+
+This repository does NOT change the menu, icons, or IceWM configuration scripts.
+
 IceWM looks and feels more like GNOME 2, Xfce, and Windows 95/98/XP than Fluxbox does.
 
 IceWM is easier to configure than JWM and has more support available.
