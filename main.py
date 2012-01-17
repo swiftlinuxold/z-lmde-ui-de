@@ -124,8 +124,8 @@ shutil.copyfile (src, dest)
 # startup: carried over from antiX-based Swift Linux
 src=dir_develop+'/ui-de/etc_X11_icewm/startup'
 dest='/etc/X11/icewm/startup'
-os.system ('chmod a+rwx ' + dest)
 shutil.copyfile(src, dest)
+os.system ('chmod a+rwx ' + dest)
 
 dest = dir_pb3 + '/startup'
 shutil.copyfile(src, dest)
