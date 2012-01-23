@@ -36,7 +36,7 @@ def elim_dir (dir_to_elim):
 		shutil.rmtree (dir_to_elim)
 
 def create_dir (dir_to_create):
-    if (os.path.exists(dir_to_create)):
+    if not (os.path.exists(dir_to_create)):
         os.mkdir (dir_to_create)
 
 
