@@ -204,7 +204,7 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 
 TEXT
-Regular Swift Linux 0.2.0 (derived from LMDE 32-bit GNOME)
+Regular Swift Linux 0.2.0 (derived from LMDE 32-bit GNOME 201109)
 Kernel: $sysname $kernel     Machine: $machine    
 Time and Date: ${time %a %R (%l:%M %p) %b %e, %Y}
 CPU usage: ${cpu}%     RAM usage: $memperc% ($mem/$memmax)     Swap usage: $swapperc% ($swap/$swapmax)
