@@ -87,10 +87,10 @@ shutil.copyfile(src, dest)
 
 print "Configuring ROX"
 # Create the directories for the ROX desktop files
-dir_to_create (dir_user + '/.config/rox.sourceforge.net/')
-dir_to_create ('/etc/skel/.config/rox.sourceforge.net/')
-dir_to_create (dir_user + '/.config/rox.sourceforge.net/ROX-Filer')
-dir_to_create ('/etc/skel/.config/rox.sourceforge.net/ROX-Filer')
+create_dir (dir_user + '/.config/rox.sourceforge.net/')
+create_dir ('/etc/skel/.config/rox.sourceforge.net/')
+create_dir (dir_user + '/.config/rox.sourceforge.net/ROX-Filer')
+create_dir ('/etc/skel/.config/rox.sourceforge.net/ROX-Filer')
 
 # Copy the ROX desktop file to the necessary directories
 src = dir_develop+'/ui-de/ROX-Filer/pb_swift'
