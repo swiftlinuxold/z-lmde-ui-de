@@ -45,6 +45,8 @@ os.system ('apt-get install -y conky')
 src = dir_develop + '/ui-de/dotconkyrc/conkyrc-regular'
 dest = '/home/' + uname + '/.conkyrc'
 shutil.copyfile(src, dest)
+dest = '/etc/skel/.conkyrc'
+shutil.copyfile(src, dest)
 
 print 'Install IceWM'
 # Install IceWM
