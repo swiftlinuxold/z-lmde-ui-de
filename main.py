@@ -87,6 +87,8 @@ shutil.copyfile(src, dest)
 
 print "Configuring ROX"
 # Create the directories for the ROX desktop files
+create_dir (dir_user + '/.config')
+create_dir ('/etc/skel/.config')
 create_dir (dir_user + '/.config/rox.sourceforge.net/')
 create_dir ('/etc/skel/.config/rox.sourceforge.net/')
 create_dir (dir_user + '/.config/rox.sourceforge.net/ROX-Filer')
