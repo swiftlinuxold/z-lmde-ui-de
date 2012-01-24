@@ -1,3 +1,5 @@
+Restart IceWM and ROX pinboard with the command "icewm-session"
+
 ICEWM STARTUP IN ANTIX
 Provided by ~/.icewm/startup
 
