@@ -13,24 +13,16 @@
   <icon x="40" y="120" label="Write">/usr/share/applications/libreoffice-writer.desktop</icon>
   <icon x="110" y="120" label="Calc">/usr/share/applications/libreoffice-calc.desktop</icon>
   <icon x="180" y="120" label="mtPaint">/usr/share/applications/mtpaint.desktop</icon>
-  
-  <icon x="40" y="190" label="WWW">/usr/share/applications/iceweasel.desktop</icon>
-  <icon x="110" y="190" label="Email">/usr/share/applications/sylpheed.desktop</icon>
+
+  <icon x="40" y="190" label="Network">/usr/share/applications/nm-connection-editor.desktop</icon>  
+  <icon x="110" y="190" label="WWW">/usr/share/applications/iceweasel.desktop</icon>
+  <icon x="180" y="190" label="Email">/usr/share/applications/sylpheed.desktop</icon>
 
   <icon x="40" y="260" label="MPlayer">/usr/share/applications/mplayer.desktop</icon>
-  <icon x="110" y="260" label="VLC Player">/usr/share/applications/vlc.desktop</icon>
-
-
-  <icon x="110" y="330" label="Connect">/usr/share/applications/nm-connection-editor.desktop</icon>
   
-   
-
-
+  <icon x="40" y="330" label="Search">/usr/share/applications/searchmonkey.desktop</icon>
   
-
-  
-  <icon x="40" y="400" label="Search">/usr/share/applications/searchmonkey.desktop</icon>
-  
+  <icon x="40" y="400" label="Install">/usr/share/applications/debian-installer-launcher.desktop</icon>
 
 
 </pinboard>
