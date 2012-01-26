@@ -43,7 +43,7 @@ def create_dir (dir_to_create):
 # Install and configure Conky
 os.system ('apt-get install -y conky')
 src = dir_develop + '/ui-de/dotconkyrc/conkyrc-regular'
-dest = '/home/' + uname + '/.conkyrc'
+dest = dir_user + '/.conkyrc'
 shutil.copyfile(src, dest)
 dest = '/etc/skel/.conkyrc'
 shutil.copyfile(src, dest)
@@ -88,7 +88,7 @@ dest = dir_wallpaper + '/swift.jpg'
 shutil.copyfile(src, dest)    
 
 print "Configuring ROX"
-# Create the directories for the ROX desktop files
+# Create the directories for the ROX desktop
 create_dir (dir_user + '/.config')
 create_dir ('/etc/skel/.config')
 create_dir (dir_user + '/.config/rox.sourceforge.net/')
@@ -117,7 +117,7 @@ shutil.copyfile (src, dest)
 dest = '/etc/skel/.config/rox.sourceforge.net/ROX-Filer/globicons'
 shutil.copyfile (src, dest)
 
-print "Adding/reoplacing IceWM configuration files"
+print "Adding/replacing IceWM configuration files"
 create_dir (dir_user + '/.icewm')
 create_dir ('/etc/skel/.icewm')
 
