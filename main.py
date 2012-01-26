@@ -79,8 +79,8 @@ elim_dir (backgrounds+'linuxmint-katya-extra')
 print "Adding Swift Linux wallpaper"
 # Create directory for Swift Linux wallpaper
 dir_wallpaper='/usr/share/backgrounds/swift'
-if not (os.path.exists(dir_wallpaper)):
-	os.mkdir(dir_wallpaper)
+create_dir ('/usr/share/backgrounds')
+create_dir ('/usr/share/backgrounds/swift')
 
 # Copy the wallpaper file to the Swift Linux wallpaper directory
 src = dir_develop + '/ui-de/usr_share_backgrounds_swift/rox-regular.jpg'
