@@ -82,10 +82,10 @@ dir_wallpaper='/usr/share/backgrounds/swift'
 create_dir ('/usr/share/backgrounds')
 create_dir ('/usr/share/backgrounds/swift')
 
-# Copy the wallpaper file to the Swift Linux wallpaper directory
-src = dir_develop + '/ui-de/usr_share_backgrounds_swift/rox-regular.jpg'
-dest = dir_wallpaper + '/swift.jpg'
-shutil.copyfile(src, dest)    
+# Copy the wallpaper images to the Swift Linux wallpaper directory
+src = dir_develop + '/ui-de/usr_share_backgrounds_swift/*'
+dest = '/usr/share/backgrounds/swift'
+os.system ('cp ' + src + ' ' + dest)
 
 print "Configuring ROX"
 # Create the directories for the ROX desktop
