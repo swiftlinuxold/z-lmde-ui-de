@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <pinboard>
-  <backdrop style="Stretched">/usr/share/backgrounds/swift/swift.jpg</backdrop>
+  <backdrop style="Stretched">/usr/share/backgrounds/swift/rox-regular.jpg</backdrop>
 
   <icon x="40" y="50" label="Home">/usr/share/applications/pcmanfm.desktop</icon>
   <icon x="110" y="50" label="Help">/usr/share/swiftlinux/help/index.html</icon>
