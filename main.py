@@ -84,6 +84,13 @@ shutil.copyfile(src, dest)
 dest = '/etc/skel/.config/rox.sourceforge.net/ROX-Filer/pb_swift'
 shutil.copyfile(src, dest)
 
+# Remove the installation icon from /etc/skel/.config/rox.sourceforge.net/ROX-Filer/pb_swift
+import fileinput
+for line in fileinput.input(dest,inplace =1):
+    line = line.strip()
+    if not 'debian-installer-launcher' in line:
+        print line 
+
 # Copy the ROX Options file to the necessary directories
 src = dir_develop + '/ui-de/ROX-Filer/Options'
 dest = dir_user + '/.config/rox.sourceforge.net/ROX-Filer/Options'
