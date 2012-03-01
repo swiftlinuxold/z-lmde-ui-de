@@ -68,25 +68,6 @@ elim_dir (themes+'motif')
 elim_dir (themes+'warp3')
 elim_dir (themes+'warp4')
 
-# Remove background wallpapers for GNOME to save space
-print "Removing excess wallpapers"
-backgrounds='/usr/share/backgrounds/'
-elim_dir (backgrounds+'linuxmint')
-elim_dir (backgrounds+'linuxmint-debian')
-elim_dir (backgrounds+'linuxmint-katya')
-elim_dir (backgrounds+'linuxmint-katya-extra')
-
-print "Adding Swift Linux wallpaper"
-# Create directory for Swift Linux wallpaper
-dir_wallpaper='/usr/share/backgrounds/swift'
-create_dir ('/usr/share/backgrounds')
-create_dir ('/usr/share/backgrounds/swift')
-
-# Copy the wallpaper images to the Swift Linux wallpaper directory
-src = dir_develop + '/ui-de/usr_share_backgrounds_swift/*'
-dest = '/usr/share/backgrounds/swift'
-os.system ('cp ' + src + ' ' + dest)
-
 print "Configuring ROX"
 # Create the directories for the ROX desktop
 create_dir (dir_user + '/.config')
