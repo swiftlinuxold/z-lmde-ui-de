@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# auto-icewm-menu.sh &
+sh /usr/local/bin/auto-icewm-menu.sh &
 
 #killall icewmtray
 #icewmtray &
