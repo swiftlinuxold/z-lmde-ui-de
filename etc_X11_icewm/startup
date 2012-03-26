@@ -1,8 +1,5 @@
 #!/bin/bash
 
-########## PLAY STARTUP SOUND #########
-#sound
-
 sh /usr/local/bin/auto-icewm-menu.sh & # Update the menu
 
 #killall icewmtray
@@ -16,3 +13,6 @@ rox --pinboard=swift ## Activate ROX pinboard to showdesktop icons
 
 
 conky & # Activate Conky display
+
+########## PLAY STARTUP SOUND #########
+#sound
