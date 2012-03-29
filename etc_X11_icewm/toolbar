@@ -21,5 +21,5 @@ prog "WWW" /usr/share/iceweasel/chrome/icons/default/default16.png iceweasel
 ### System/settings applications
 #prog "Volume" /usr/share/icons/gTangish-2.0a1/32x32/apps/multimedia-volume-control.png roxterm -e alsamixer
 prog "Config" /usr/share/icons/nuoveXT2/32x32/categories/preferences-desktop.png /usr/local/bin/config-swiftlinux.sh
-prog "Quit" /usr/share/icons/gnome/32x32/actions/process-stop.png /usr/local/bin/exitantix.sh
+prog "Quit" /usr/share/icons/gnome/32x32/actions/process-stop.png python /usr/local/bin/exit-os.py
 
