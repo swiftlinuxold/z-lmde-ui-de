@@ -26,8 +26,11 @@ else:
 
 # THIS IS THE SCRIPT FOR INSTALLING AND SETTING UP ICEWM, ROX, AND CONKY
 
-print '======================================='
-print 'BEGIN INSTALLING AND CONFIGURING THE DE'
+def message (string):
+    os.system ('echo ' + string )
+
+message ('=======================================')
+message ('BEGIN INSTALLING AND CONFIGURING THE DE')
 
 import shutil
 
@@ -48,7 +51,7 @@ shutil.copyfile(src, dest)
 dest = '/etc/skel/.conkyrc'
 shutil.copyfile(src, dest)
 
-print 'Install IceWM'
+message ('Install IceWM')
 # Install IceWM
 os.system('apt-get install -y icewm')
 # os.system('apt-get install -y icewm icewm-gnome-support')
@@ -56,7 +59,12 @@ os.system('apt-get install -y icewm')
 # Install ROX-Filer
 os.system ('apt-get install -y rox-filer')
 
-print 'Removing excess themes'
+# Remove excess sessions from /usr/share/xsessions
+os.system ('rm /usr/share/xsessions/gnome.desktop')
+os.system ('rm /usr/share/xsessions/icewm-session.desktop')
+os.system ('rm /usr/share/xsessions/lightdm-xsession.desktop')
+
+message ('Removing excess themes')
 # Only default, icedesert, nice, nice2, win95, and yellowmotif remain.
 # These themes are easy to read and easy on space.
 # IceWM themes options are under Main menu -> Settings -> Themes
@@ -68,7 +76,7 @@ elim_dir (themes+'motif')
 elim_dir (themes+'warp3')
 elim_dir (themes+'warp4')
 
-print "Configuring ROX"
+message ("Configuring ROX")
 # Create the directories for the ROX desktop
 create_dir (dir_user + '/.config')
 create_dir ('/etc/skel/.config')
@@ -105,7 +113,7 @@ shutil.copyfile (src, dest)
 dest = '/etc/skel/.config/rox.sourceforge.net/ROX-Filer/globicons'
 shutil.copyfile (src, dest)
 
-print "Adding/replacing IceWM configuration files"
+message ("Adding/replacing IceWM configuration files")
 create_dir (dir_user + '/.icewm')
 create_dir ('/etc/skel/.icewm')
 
@@ -166,5 +174,5 @@ shutil.copyfile(src, dest)
 dest = '/etc/skel/.icewm/toolbar'
 shutil.copyfile(src, dest)
 
-print 'FINISHED INSTALLING AND CONFIGURING THE DE'
-print '=========================================='
+message ('FINISHED INSTALLING AND CONFIGURING THE DE')
+message ('==========================================')
