@@ -59,6 +59,7 @@ os.system ('apt-get install -y rox-filer')
 
 # Remove excess sessions from /usr/share/xsessions
 os.system ('rm /usr/share/xsessions/gnome.desktop')
+os.system ('cp /usr/share/xsessions/IceWM.desktop /usr/share/xsessions/lightdm-xsession.desktop')
 
 message ('Removing excess themes')
 # Only default, icedesert, nice, nice2, win95, and yellowmotif remain.
