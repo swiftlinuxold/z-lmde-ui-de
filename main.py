@@ -42,7 +42,6 @@ def create_dir (dir_to_create):
     if not (os.path.exists(dir_to_create)):
         os.mkdir (dir_to_create)
 
-
 # Install and configure Conky
 os.system ('apt-get install -y conky')
 src = dir_develop + '/ui-de/dotconkyrc/conkyrc-regular'
@@ -54,15 +53,12 @@ shutil.copyfile(src, dest)
 message ('Install IceWM')
 # Install IceWM
 os.system('apt-get install -y icewm')
-# os.system('apt-get install -y icewm icewm-gnome-support')
 
 # Install ROX-Filer
 os.system ('apt-get install -y rox-filer')
 
 # Remove excess sessions from /usr/share/xsessions
 os.system ('rm /usr/share/xsessions/gnome.desktop')
-os.system ('rm /usr/share/xsessions/icewm-session.desktop')
-os.system ('rm /usr/share/xsessions/lightdm-xsession.desktop')
 
 message ('Removing excess themes')
 # Only default, icedesert, nice, nice2, win95, and yellowmotif remain.
