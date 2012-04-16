@@ -14,7 +14,7 @@
   <icon x="110" y="120" label="Calc">/usr/share/applications/libreoffice-calc.desktop</icon>
   <icon x="180" y="120" label="mtPaint">/usr/share/applications/mtpaint.desktop</icon>
 
-  <icon x="40" y="190" label="Network">/usr/local/bin/config-network.sh</icon>  
+  <icon x="40" y="190" label="Network">/usr/local/bin/config-network.py</icon>  
   <icon x="110" y="190" label="WWW">/usr/share/applications/iceweasel.desktop</icon>
   <icon x="180" y="190" label="Email">/usr/share/applications/sylpheed.desktop</icon>
 

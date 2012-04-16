@@ -9,7 +9,7 @@
   <rule match="/usr/local/bin/get-apps.sh">
     <icon>/usr/share/icons/gnome/48x48/apps/system-software-install.png</icon>
   </rule>
-  <rule match="/usr/local/bin/config-network.sh">
+  <rule match="/usr/local/bin/config-network.py">
     <icon>/usr/share/icons/gnome/32x32/categories/preferences-system-network.png</icon>
   </rule>
 </special-files>
