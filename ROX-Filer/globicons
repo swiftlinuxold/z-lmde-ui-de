@@ -3,8 +3,8 @@
   <rule match="/usr/local/bin/use-apps.sh">
     <icon>/usr/share/icons/gTangish-2.0a1/32x32/categories/applications-accessories.png</icon>
   </rule>
-  <rule match="/usr/local/bin/config-swiftlinux.sh">
-    <icon>/usr/share/icons/nuoveXT2/32x32/categories/preferences-desktop.png</icon>
+  <rule match="/usr/local/bin/config-general.py">
+    <icon>/usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png</icon>
   </rule>
   <rule match="/usr/local/bin/config-software.py">
     <icon>/usr/share/icons/gnome/48x48/apps/system-software-install.png</icon>

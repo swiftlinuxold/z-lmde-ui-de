@@ -6,7 +6,7 @@
   <icon x="110" y="50" label="Help">/usr/share/swiftlinux/help/index.html</icon>
   <icon x="180" y="50" label="Use Apps">/usr/local/bin/use-apps.sh</icon>
   <icon x="250" y="50" label="Get Apps">/usr/local/bin/config-software.py</icon>
-  <icon x="320" y="50" label="Config">/usr/local/bin/config-swiftlinux.sh</icon>
+  <icon x="320" y="50" label="Control">/usr/local/bin/config-general.py</icon>
   <icon x="390" y="50" label="Text">/usr/share/applications/geany.desktop</icon>
   <icon x="460" y="50" label="Terminal">/usr/share/applications/roxterm.desktop</icon>
   
