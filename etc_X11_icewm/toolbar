@@ -5,8 +5,8 @@
 ### Commonly used applications
 prog "Home" /usr/share/icewm/icons/folder_16x16.xpm pcmanfm
 prog "Terminal" /usr/share/icewm/icons/xterm_16x16.xpm  roxterm
-prog "Text" /usr/share/icewm/icons/file_16x16.xpm geany
 prog "WWW" /usr/share/iceweasel/chrome/icons/default/default16.png iceweasel file:///usr/share/swiftlinux/help/index.html
+prog "Help" /usr/share/icons/gTangish-2.0a1/32x32/apps/help.png iceweasel file:///usr/share/swiftlinux/help/index.html
 
 ### Here is an example of a "quick launch" button
 #menu "Quick Launch" /usr/share/icons/Tango/32x32/actions/go-up.png {
@@ -20,6 +20,7 @@ prog "WWW" /usr/share/iceweasel/chrome/icons/default/default16.png iceweasel fil
 
 ### System/settings applications
 #prog "Volume" /usr/share/icons/gTangish-2.0a1/32x32/apps/multimedia-volume-control.png roxterm -e alsamixer
+prog "Network Wizard" /usr/share/icons/gnome/32x32/categories/preferences-system-network.png /usr/local/bin/config-network.py
 prog "Control Center" /usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png python /usr/local/bin/config-general.py
 prog "Quit" /usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-session-halt.png python /usr/local/bin/exit-os.py
 
