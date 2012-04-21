@@ -20,6 +20,6 @@ prog "WWW" /usr/share/iceweasel/chrome/icons/default/default16.png iceweasel fil
 
 ### System/settings applications
 #prog "Volume" /usr/share/icons/gTangish-2.0a1/32x32/apps/multimedia-volume-control.png roxterm -e alsamixer
-prog "Config" /usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png python /usr/local/bin/config-general.py
+prog "Control Center" /usr/share/icons/gTangish-2.0a1/32x32/categories/preferences-desktop.png python /usr/local/bin/config-general.py
 prog "Quit" /usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-session-halt.png python /usr/local/bin/exit-os.py
 
