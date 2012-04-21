@@ -12,4 +12,7 @@
   <rule match="/usr/local/bin/config-network.py">
     <icon>/usr/share/icons/gnome/32x32/categories/preferences-system-network.png</icon>
   </rule>
+  <rule match="/usr/share/swiftlinux/help/index.html">
+    <icon>/usr/share/icons/gTangish-2.0a1/32x32/apps/help.png</icon>
+  </rule>
 </special-files>
